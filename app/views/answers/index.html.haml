@@ -1,0 +1,16 @@
+%h2 Welcome!
+%h3 Guess a number between zero and a million (hint: start with 500,000)!
+%div{"data-controller" => "hello"}
+  %h1{"data-hello-target" => "answer"} 
+  %div{"data-hello-target" => "form"}
+    %input{"data-hello-target" => "guess", :type => "text"}
+    %button{"data-action" => "click->hello#guess"}
+      Guess
+    %h2{"data-hello-target" => "response"}
+    %h3{"data-hello-target" => "output"}
+    %h3{"data-hello-target" => "outputArray"}
+    %h2{"data-hello-target" => "incrementer"}
+
+  %h1{"data-hello-target" => "lossResponse"} You Lose HaHa
+  %h1{"data-hello-target" => "winResponse"} You Win HaHa
+  
